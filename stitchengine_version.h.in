@@ -1,0 +1,11 @@
+/// The version.h file is created by CMake during the CMake step.
+/// Values in the version.h.in file are substituted by CMake.
+/// The version is set in the top level CMakeLists file.
+
+#ifndef STITCHENGINE_VERSION_H
+#define STITCHENGINE_VERSION_H 1
+
+#define STITCHENGINE_VERSION_MAJOR ${STITCHENGINE_VERSION_MAJOR}
+#define STITCHENGINE_VERSION_MINOR ${STITCHENGINE_VERSION_MINOR}
+
+#endif // STITCHENGINE_VERSION_H

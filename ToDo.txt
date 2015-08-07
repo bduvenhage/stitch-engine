@@ -1,0 +1,45 @@
+
+ToDo:
+=====
+* Use a max heap for the kNN query!!!
+
+* kd-tree is way slow when too many (i.e. 50+) neighbours!
+
+* Create a lighter brush for k-DOP bounding volume purposes. Possibly don't need the material, vertices, etc. , but still need operations such as merge and construction from point cloud!
+
+* Add a ray end point to the ray intersection code. The ray end point is usefull for 
+
+* Somehow merge the radiance map and camera/sensor concepts so that a camera/sensor has a radiancemap and a SimplePinholeCamera has an FPA radiance map.
+  Counter: On the other hand scene radiance is not dependent on pixel size or camera details!!!
+
+* Look at PBRT book, Second Ed., Section 4.4 - My BVHs' (Ball-tree, etc.) for ray intersection can be a lot better!!!
+
+* Add HEALPix equadistant vector generation for comparison.
+
+* Look at and potentially add to BRDF verification the RPV and modified RPV (MRPV) BRDF models that Derek mentioned.
+
+* Ellipsoid k-nearest neighbour query matched to stretch of projected mesh elements. We can track the projection/stretch along the path.
+
+//=== Augmenting with (partial) photon map ===
+* Using photon maps to fill gaps would require a photon tracing paths where photons are correctly scattered instead of just following the BRDF peaks.
+  We do however know where on the emission hemisphere to concentrate such photons.
+
+* How to fill in the gaps in the beam radianc estimate.
+* More accurate photon map radiance estimate when refined light path distribution.
+* More accurate photon nearest neighbour footprint to take account boundary bias, etc.
+
+C++11 ToDo:
+===========
+* Use auto more, but ... no more need for C++98 fallback.
+
+* Use C++11 smart pointer style nl. unique_ptr, shared_ptr, etc. - Use non-owning raw pointers only! (Almost-)Never call delete.
+
+* Make sure to use nullptr for null ptrs.
+
+* Range for.
+
+* Nonmember begin and end for std and custom iterators.
+
+* Bash Lambda functions somewhere into the code to start learning about it.
+
+* Already started using move semantics and perfect forwarding...

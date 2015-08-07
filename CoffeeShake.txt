@@ -1,0 +1,24 @@
+The Perfect Coffee Shake:
+=========================
+
+[Developed in Partial Fulfillment of the Requirements for the Degree of Doctor of Philosophy.]
+
+Ingredients:
+1) Strong cold pressed coffee.
+2) Thick vanilla ice cream.
+3) Dark/bitter chocolate.
+4) Peanut/hazelnut butter or roasted (unsalted/salted) nuts.
+5) Sprinkles - the final touches.
+
+Method:
+cold_pressed_coffee - TAGGED : Cold press / drip coffee.
+
+vanilla_ice_cream - TAGGED : Blend cold pressed coffee and 500ml ice cream in a ratio that suits your texture and taste preferences.
+
+dark_chocolate - TAGGED : Blend in about 30 gram of dark chocolate.
+
+peanut_butter - TAGGED : Blend in 30 gram of nuttyness.
+
+sprinkles - TAGGED : Top with tasty or colourful sprinkles.
+
+flake - OPTIONAL FUTURE TAG : IN-CASE-OF-A-NEED-TO-IMPRESS-EMERGENCY

@@ -1,0 +1,35 @@
+HowTo:
+======
+
+
+================================
+* Count number of lines of code:
+================================
+ Simply run: find . "(" -name "*.m" -or -name "*.h" -or -name "*.mm" -or -name "*.cpp" -or -name "CMakeLists.txt" ")" -print0 | xargs -0 wc -l
+OR
+ Install and use sloccount
+
+
+===================================
+* Rebuild Doxygen for svn check in:
+===================================
+ 1) Remove all files (only files, not folders!) from 'html' folder and 'html/search' folder (see below).
+ 2) Rebuild documentation.
+ 3) Add new files (see below).
+ 4) Delete missing files (see below).
+ 5) Commit.
+
+* Remove all(many) files from local dir (note the -depth argument):
+find . -name "*" -print -depth 1 | xargs rm
+
+* Add new files to repo:
+svn st | grep ^? | awk '{print $2}' | xargs svn add
+
+* Delete missing files from repo:
+svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
+
+
+======================
+* Tag the tunk version
+======================
+svn copy https://stitch-engine.googlecode.com/svn/StitchEngine/trunk https://stitch-engine.googlecode.com/svn/StitchEngine/tags/dark-chocolate -m "Dark chocolate tag that accompanies Report 4 rev a."
